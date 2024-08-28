@@ -1,0 +1,78 @@
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кулинарный блог</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #dddddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align: center;">Рейтинг любимых блюд</h2>
+
+<table>
+    <tr>
+        <th>Название блюда</th>
+        <th>Оценка (1-10)</th>
+        <th>Ссылка на рецепт</th>
+        <th>Фото</th>
+    </tr>
+    <tr>
+        <td>Особенный мясной рулет с фетой, травами и чесноком</td>
+        <td>9</td>
+        <td><a href="https://www.edimdoma.ru/retsepty/55982-osobennyy-myasnoy-rulet-s-fetoy-travami-i-chesnokom">Рецепт</a></td>
+        <td><img src="image.jpg" alt="Особенный мясной рулет с фетой, травами и чесноком"></td>
+    </tr>
+    <tr>
+        <td>Закуска из баклажанов с мидиями</td>
+        <td>8</td>
+        <td><a href="https://www.edimdoma.ru/retsepty/104285-zakuska-iz-baklazhanov-s-midiyami">Рецепт</a></td>
+        <td><img src="image1.jpg" alt="Закуска из баклажанов с мидиями"></td>
+    </tr>
+    <tr>
+        <td>Александровский пирог</td>
+        <td>7</td>
+        <td><a href="https://www.edimdoma.ru/retsepty/115969-aleksandrovskiy-pirog">Рецепт</a></td>
+        <td><img src="image3.jpg" alt="Александровский пирог"></td>
+    </tr>
+    <tr>
+        <td>Чипсы из поленты с розмарином и пряной солью</td>
+        <td>10</td>
+        <td><a href="https://www.edimdoma.ru/retsepty/63847-chipsy-iz-polenty-s-rozmarinom-i-pryanoy-solyu-dlya-marinyl">Рецепт</a></td>
+        <td><img src="image2.jpg" alt="Чипсы из поленты с розмарином и пряной солью"></td>
+    </tr>
+    <tr>
+        <td>Эклеры «Новогодние»</td>
+        <td>5</td>
+        <td><a href="https://www.edimdoma.ru/retsepty/109596-eklery-novogodnie">Рецепт</a></td>
+        <td><img src="image4.jpg" alt="Эклеры «Новогодние»"></td>
+    </tr>
+</table>
+
+</body>
+</html>
+"""
+
+# Сохранение HTML в файл
+with open("rating.html", "w", encoding="utf-8") as file:
+    file.write(html_content)
+
+print("HTML таблица создана и сохранена в файл 'rating.html'")
